@@ -2,12 +2,20 @@ const readlineSync = require('readline-sync');
 
 console.log('Расчет скидки в магазине');
 
-const price = readlineSync.question('Стоимость: '); 
-const rate = readlineSync.question('Процент: '); 
+const price = Number(readlineSync.question('Стоимость: ')); 
+const rate = Number(readlineSync.question('Процент: ')); 
 
 const calculateDiscount = (x, y) => {
 
-    const result = x -= x * y;
+    let result = x;
+
+    if (Math.floor(y) > 0) {
+        result = x -= (x * y) / 100;
+    }
+    else {
+        result = x -= x * y;
+    }
+
     return result;
 };
 

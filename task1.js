@@ -1,8 +1,8 @@
 const readlineSync = require('readline-sync');
 
-console.log('Калькулятор налога на доходы');
+console.log('Калькулятор налога на доходы(15 процентов)');
 
-const income = readlineSync.question('Доходы: '); 
+const income = Number(readlineSync.question('Доходы: ')); 
 
 const rate = 0.15;
 

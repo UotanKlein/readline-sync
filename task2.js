@@ -1,8 +1,8 @@
 const readlineSync = require('readline-sync');
 
-console.log('Конвертер температуры');
+console.log('Конвертер градусов Цельсия в Фаренгейты');
 
-const сelsius = readlineSync.question('Цельсии: '); 
+const сelsius = Number(readlineSync.question('Цельсии: ')); 
 
 const celsiusToFahrenheit = (c) => {
     

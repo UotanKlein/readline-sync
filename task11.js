@@ -2,10 +2,8 @@ const readlineSync = require('readline-sync');
 
 console.log('Калькулятор бонусов сотрудника');
 
-const salary = Math.round(Math.random() * 10000);
-const performanceRating = Math.round(Math.random() * 10);
-
-console.log(`Зарплата: ${salary}\nРейтинг: ${performanceRating}`);
+const salary = Number(readlineSync.question('Зарплата: '));
+const performanceRating = Number(readlineSync.question('Рейтинг: '));
 
 const calculateEmployeeBonus = (x, y) => {
 

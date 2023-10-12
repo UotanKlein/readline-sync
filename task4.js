@@ -6,11 +6,12 @@ const width = readlineSync.question('Ширина треугольника: ');
 const height = readlineSync.question('Высота треугольника: '); 
 
 const calculateRectangleProperties = (w, h) => {
-    
+
     const S = w * h;
     const P = 2 * w + 2 * h;
-    console.log(`Площадь: ${S}`);
-    console.log(`Периметр: ${P}`);
+
+    const arrya = [S, P];
+    return arrya;
 };
 
-calculateRectangleProperties(width, height);
+console.log(`Площадь: ${calculateRectangleProperties(width, height)[0]}\nПериметр: ${calculateRectangleProperties(width, height)[1]}`);
