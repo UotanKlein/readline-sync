@@ -19,9 +19,8 @@ const calculateAverageGrade = (x) => {
     
     return result;
     }
-    else {
-        return 'Ошибка, введите числа от 1 до 10.'
-    }
+
+    return 'Ошибка, введите числа от 1 до 10.';
 };
 
 const calculateAverageGrade2 = (x) => {
