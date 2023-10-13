@@ -9,7 +9,7 @@ const calculateAverageGrade = (x) => {
     const isBelowThreshold = (currentValue) => currentValue <= 10 && currentValue >= 1;
 
     const split = x.split(' ');
-    const count = x.split(' ').length;
+    const count = split.length;
     const convert = split.map((x) => Number(x));
 
     if (convert.every(isBelowThreshold)) {
